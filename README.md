@@ -9,5 +9,5 @@ See more
 
 [How to use description](http://www.motor-talk.de/forum/aktion/Attachment.html?attachmentId=721311)
 
-[Repair manual](https://www.youtube.com/watch?v=lRcj1fQcWwU)
+[Repair manual video](https://www.youtube.com/watch?v=lRcj1fQcWwU)
 
