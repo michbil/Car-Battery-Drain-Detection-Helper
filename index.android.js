@@ -12,21 +12,26 @@ import {
   View
 } from 'react-native';
 
+import FuseList from "./components/fuses.js"
+import Resistances from "./components/resistances.js"
+
 export default class fuse extends Component {
+  constructor (props) {
+    super(props);
+    this.state = {
+      selected: "5"
+    }
+  }
+  selectFuse(id) {
+    this.setState({selected:id})
+  }
+
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.android.js
-        </Text>
-        <Text style={styles.instructions}>
-          Double tap R on your keyboard to reload,{'\n'}
-          Shake or press menu button for dev menu
-        </Text>
-      </View>
+        <View style={styles.container}>
+          <FuseList style={{height:60}} initialSelection={this.state.selected} selectFuse={this.selectFuse.bind(this)}/>
+          <Resistances fuse={this.state.selected} />
+        </View>
     );
   }
 }
@@ -34,8 +39,8 @@ export default class fuse extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    flexDirection:"column",
+    alignItems: 'stretch',
     backgroundColor: '#F5FCFF',
   },
   welcome: {
@@ -49,5 +54,4 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
 });
-
 AppRegistry.registerComponent('fuse', () => fuse);
