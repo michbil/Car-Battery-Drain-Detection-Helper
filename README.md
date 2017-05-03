@@ -1,6 +1,6 @@
 # Car-Battery-Drain-Detection-Helper
-iOS and Android app to help to find source of battery drain by measuring voltage drop on the fuses
-This is app to help you to repair your car.
+iOS and Android app to help to find source of battery drain by measuring voltage drop on the fuses.
+This is app to help you to repair your car, portable voltage to current table you can carry in the pocket.
 
 ![App screenshot](https://raw.githubusercontent.com/michbil/Car-Battery-Drain-Detection-Helper/master/misc/screenshot.png)
 
